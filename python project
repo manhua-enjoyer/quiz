@@ -1,0 +1,86 @@
+
+print("This is a quiz to test ones IQ level. Each correct will add 1 point to your score\
+    Max attainable score is 10.")
+
+playing = input("Would you like to start?: yes/no ")
+
+if playing.lower() != "yes":
+    quit()
+
+print("Alright, here we go.")
+score = 0
+
+answer = input("Are drugs good for your health? ")
+if answer.lower() == "no":
+    print('+1')
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("Do you have to do homework? ")
+if answer.lower() == "yes":
+    print('+1')
+    score += 1
+else:
+    print("-1")
+
+answer = input("Is it good to skip class? ")
+if answer.lower() == "no":
+    print('+1')
+    score += 1
+else:
+    print("-1")
+
+answer = input("Do you want good grades?")
+if answer.lower() == "yes":
+    print('+1')
+    score += 1
+else:
+    print("-1")
+
+answer = input("does 2+2=4? ")
+if answer.lower() == "yes":
+    print('+1')
+    score += 1
+else:
+    print("-1")
+
+answer = input("is 8 an odd number? ")
+if answer.lower() == "no":
+    print('+1')
+    score += 1
+else:
+    print("-1")
+
+answer = input("What does a teacher do?")
+if answer.lower() == "teach":
+    print('+1')
+    score += 1
+else:
+    print("-1")
+
+answer = input("is there 30 letters in the alphabet?")
+if answer.lower() == "no":
+    print('+1')
+    score += 1
+else:
+    print("-1")
+
+answer = input("Should you study?")
+if answer.lower() == "yes":
+    print('+1')
+    score += 1
+else:
+    print("-1")
+
+answer = input("Should you pull all nighters?")
+if answer.lower() == "no":
+    print('+1')
+    score += 1
+else:
+    print("-1")
+
+
+
+print("You got " + str(score) + " questions correct!")
+print("You got " + str((score / 10) * 100) + "%.")
